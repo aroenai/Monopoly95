@@ -1,0 +1,2 @@
+#define WING32_API __declspec(dllexport)
+#define WING32_API __declspec(dllimport)
