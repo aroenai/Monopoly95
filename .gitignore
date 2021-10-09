@@ -31,3 +31,10 @@
 *.out
 *.app
 WinG32/WinG32.aps
+
+# Visual Studio Build
+.vs/
+Release/
+WinG32/Release/
+Debug/
+WinG32/Debug/
