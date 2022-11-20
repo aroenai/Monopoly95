@@ -1,0 +1,86 @@
+<HTML>
+<!--Sitemap 1.0-->
+<OBJECT type="text/site properties">
+</OBJECT>
+<UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Contents">
+		<param name="Local" value="html/idh_contents.htm">
+		</OBJECT>
+		<A HREF="html/idh_contents.htm">Contents</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Using Monopoly CD-ROM Menus">
+		<param name="Local" value="html/using_monopoly_cd_rom_menus.htm">
+		</OBJECT>
+		<A HREF="html/using_monopoly_cd_rom_menus.htm">Using Monopoly CD-ROM Menus</A><BR>
+	<UL>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="File Menu">
+			<param name="Local" value="html/file_menu.htm">
+			</OBJECT>
+			<A HREF="html/file_menu.htm">File Menu</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Action Menu">
+			<param name="Local" value="html/action_menu.htm">
+			</OBJECT>
+			<A HREF="html/action_menu.htm">Action Menu</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Options Menu">
+			<param name="Local" value="html/options_menu.htm">
+			</OBJECT>
+			<A HREF="html/options_menu.htm">Options Menu</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Help Menu">
+			<param name="Local" value="html/help_menu.htm">
+			</OBJECT>
+			<A HREF="html/help_menu.htm">Help Menu</A><BR>
+	</UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="How to Play the Game">
+		<param name="Local" value="html/how_to_play_the_game.htm">
+		</OBJECT>
+		<A HREF="html/how_to_play_the_game.htm">How to Play the Game</A><BR>
+	<UL>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Starting a Game">
+			<param name="Local" value="html/starting_a_game.htm">
+			</OBJECT>
+			<A HREF="html/starting_a_game.htm">Starting a Game</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Interrupting Play">
+			<param name="Local" value="html/interrupting_play.htm">
+			</OBJECT>
+			<A HREF="html/interrupting_play.htm">Interrupting Play</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Proposing a Trade">
+			<param name="Local" value="html/proposing_a_trade.htm">
+			</OBJECT>
+			<A HREF="html/proposing_a_trade.htm">Proposing a Trade</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="Chat Messages">
+			<param name="Local" value="html/chat_messages.htm">
+			</OBJECT>
+			<A HREF="html/chat_messages.htm">Chat Messages</A><BR>
+	</UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Rules">
+		<param name="Local" value="html/rules.htm">
+		</OBJECT>
+		<A HREF="html/rules.htm">Rules</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Troubleshooting">
+		<param name="Local" value="html/troubleshooting.htm">
+		</OBJECT>
+		<A HREF="html/troubleshooting.htm">Troubleshooting</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Creating an AI">
+		<param name="Local" value="html/creating_an_ai.htm">
+		</OBJECT>
+		<A HREF="html/creating_an_ai.htm">Creating an AI</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Waiting Room">
+		<param name="Local" value="html/waiting_room.htm">
+		</OBJECT>
+		<A HREF="html/waiting_room.htm">Waiting Room</A><BR>
+</UL>
+</HTML>
