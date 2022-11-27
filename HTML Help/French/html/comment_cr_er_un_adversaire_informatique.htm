@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <link href="../hh_default.css" rel="stylesheet" type="text/css" />
+    <title>Comment cr&#233;er un adversaire informatique</title>
+  </head>
+  <body>
+    <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+      <param name="Keyword" value="Comment cr&#233;er un adversaire informatique" />
+    </object>
+    <h2><a name="comment_cr_er_un_adversaire_informatique" id="comment_cr_er_un_adversaire_informatique"></a>Comment cr&#233;er un adversaire informatique</h2>
+    <p>Vous pouvez cr&#233;er votre propre adversaire informatique &#224; intelligence artificielle (IA) et lui attribuer un comportement bien particulier en utilisant et en adaptant certains param&#232;tres variables que vous trouverez dans les fichiers AI de MONOPOLY CD-ROM.</p>
+    <p>Durant l&#8217;installation du MONOPOLY CD-ROM, un r&#233;pertoire AI sera cr&#233;&#233; sur votre disque dur. Ce r&#233;pertoire contient les fichiers de tous les diff&#233;rents joueurs simul&#233;s par ordinateur. L&#8217;un de ces fichiers, d&#233;nomm&#233; <b>standard.ai</b>, contient une liste des variables que vous pouvez changer. Afin de cr&#233;er votre adversaire informatique &#224; comportement particulier, copiez le fichier <b>standard.ai</b> et donnez-lui un nom quelconque, par example <b>monai.ai</b>. Editez ce nouveau fichier &#224; l&#8217;aide d&#8217;un &#233;diteur de textes comme DOSEDIT, par example, et vous pouvez maintenant commencer &#224; changer les variables.</p>
+    <p>La premi&#232;re ligne du fichier doit toujours &#234;tre &#8220;[general]&#8221; comme dans <b>standard.ai</b>. Ceci mis &#224; part vous pouvez &#233;tablir autant ou bien aussi peu de param&#232;tres que vous le d&#233;sirez. Tous les param&#232;tres qui n&#8217;auront pas &#233;t&#233; pr&#233;par&#233;s dans le fichier seront mis aux valeurs par d&#233;faut du MONOPOLY CD-ROM.</p>
+    <p>Pour &#233;tablir un param&#232;tre, utilisez le format suivant: param&#232;tre_variable = nombre.</p>
+    <p>Dans la section qui suit, vous trouverez un grand nombre de param&#232;tres variables. Mais pour d&#233;couvrir d&#8217;autres param&#232;tres secrets, consultez le site Web de Westwood Studios sur <b>http://www.westwood.com</b>. Depuis la page d&#8217;origine cliquez sur Index and s&#233;lectionnez MONOPOLY CD-ROM most Frequently Asked Questions - FAQ (les questions les plus fr&#233;quemment pos&#233;es).</p>
+    <p><b><u>Les Param&#232;tres Variables IA</u></b></p>
+    <p>La premi&#232;re s&#233;rie de 28 param&#232;tres vous permet de fixer la pr&#233;f&#233;rence qu&#8217;a votre adversaire IA pour une propri&#233;t&#233; particuli&#232;re. Plus votre IA aime une propri&#233;t&#233;, plus il va lui donner de valeur, pour l&#8217;&#233;change et l&#8217;acquisition. La valeur sera &#233;valu&#233;e entre 0-200. Exemple : PLACE_PIGALLE = 150.</p>
+    <p>BOULEVARD_DE_BELLEVILLE
+      <br>RUE_LECOURBE
+      <br>GARE_MONTPARNASSE
+      <br>RUE_DE_VAUGIRARD
+      <br>RUE_DE_COURCELLES
+      <br>AVENUE_DE_LA_REPUBLIQUE
+      <br>BOULEVARD_DE_LA_VILLETTE
+      <br>COMPAGNIE _DE_DISTRIBUTION_D&#8217;ELECTRICITE
+      <br>AVENUE_DE_NEUILLY
+      <br>RUE_DE_PARADIS
+      <br>GARE_DE_LYON
+      <br>AVENUE_MOZART
+      <br>BOULEVARD_SAINT_MICHEL
+      <br>PLACE_PIGALLE
+      <br>AVENUE_MATIGNON
+      <br>BOULEVARD_MALESHERBES
+      <br>AVENUE_HENRI_MARTIN
+      <br>GARE_DU_NORD
+      <br>FAUBOURG_SAINT_HONORE
+      <br>PLACE_DE_LA_BOURSE
+      <br>COMPAGNIE_DE_DISTRIBUTION_DES_EAUX
+      <br>RUE_LA_FAYETTE
+      <br>AVENUE_DE_BRETEUIL
+      <br>AVENUE_FOCH
+      <br>BOULEVARD_DES_CAPUCINES
+      <br>GARE_SAINT_LAZARE
+      <br>AVENUE_DES_CHAMPS_ELYSEES
+      <br>RUE_DE_LA_PAIX
+    </p>
+    <p>Vous pouvez d&#233;finir d&#8217;autres valeurs qui vont changer certains aspects du jeu. Les voici :</p>
+    <dl>
+      <dt><b>OPTIMISME</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 5. Ce param&#232;tre permet &#224; votre adversaire simul&#233; par ordinateur de pr&#233;dire sa probabilit&#233; de succ&#232;s pour l&#8217;acquisition de propri&#233;t&#233;s dans l&#8217;objet de r&#233;aliser un monopole.</p>
+      </dd>
+      <dt><b>OPTIMISME_DE_MONOPOLE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 2. Cette variable de d&#233;cision est similaire &#224; OPTIMISME, mais elle permet a votre adversaire simul&#233; par ordinateur de pr&#233;dire quelles sont ses chances de succ&#232;s dans l&#8217;acquisition d&#8217;un monopole complet, et non pas seulement dans l&#8217;acquisition de propri&#233;t&#233;s.</p>
+      </dd>
+      <dt><b>NOMBRE_DE_TOURS_RESTANT</b></dt>
+      <dd>
+        <p>Valeur de 40 &#224; 100. Ceci permet &#224; votre adversaire simul&#233; par ordinateur de pr&#233;dire pour combien de tours le jeu va durer. Plus le nombre sera &#233;lev&#233;, plus les propri&#233;t&#233;s auront de la valeur pour lui.</p>
+      </dd>
+      <dt><b>MOYENNE_DE_FRANCS_A_CHAQUE_TOUR</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 1000. Ce param&#232;tre permet &#224; votre adversaire simul&#233; par ordinateur de pr&#233;dire l&#8217;augmentation de son argent liquide et de son capital &#224; chaque tour. Pour fixer le param&#232;tre, divisez la somme d&#233;sir&#233;e (en Francs) par 100.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_PROPRIETE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable augmente la valeur des propri&#233;t&#233;s par rapport &#224; l&#8217;argent liquide dans l&#8217;optique de votre adversaire simul&#233; par ordinateur. Plus le quotient est &#233;lev&#233; plus il choisira de pr&#233;f&#233;rer les propri&#233;t&#233;s &#224; l&#8217;argent.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_GARE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable augmente la valeur d&#8217;une gare par rapport aux autres propri&#233;t&#233;s dans l&#8217;optique de votre adversaire simul&#233; par ordinateur.</p>
+      </dd>
+      <dt><b>RESERVE_MINIMUM_D&#8217;ARGENT_LIQUIDE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 1000. Cette variable ordonne &#224; votre adversaire simul&#233; par ordinateur d&#8217;essayer de toujours garder une somme minimum d&#8217;argent liquide. Plus le quotient est &#233;lev&#233;, et moins il sera aggressif dans ses achats de propri&#233;t&#233;s et de maisons. Pour fixer ce param&#232;tre, divisez la somme d&#233;sir&#233;e (en Francs) par 100.</p>
+      </dd>
+      <dt><b>FACTEUR_DE_VENTE_AUX_ENCHERES</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 4. Cette variable permet &#224; votre adversaire simul&#233; par ordinateur de jouer les petits malins. Il s&#8217;arr&#234;te sur une propri&#233;t&#233;,v&#233;rifie la quantit&#233; d&#8217;argent liquide qui reste aux autre joueurs. Si les autres joueurs n&#8217;ont plus beaucoup de liquide, il fait vendre aux ench&#232;res cette propri&#233;t&#233;, et essaye de l&#8217;acheter pour le moins d&#8217;argent possible. Plus le quotient est bas, plus il faudra que le montant de liquide qui reste entre les mains des autres joueurs soit bas pour que votre adversaire simul&#233; par ordinateur prenne cette d&#233;cision.</p>
+      </dd>
+      <dt><b>FACTEUR_DE_PROBABILITE_DE_VENTE_AUX_ENCHERES</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 100. Apr&#232;s avoir examin&#233; Le FACTEUR_DE_VENTE_AUX_ENCHERES, cette variable de d&#233;cision va d&#233;terminer la probabilit&#233; que votre adversaire simul&#233; par ordinateur d&#233;cide de faire vendre la propri&#233;t&#233; aux ench&#232;res,</p>
+      </dd>
+      <dt><b>BENEFICE_MINIMUM</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 2. Plus cette variable est situ&#233;e au del&#224; de 1.0, plus votre adversaire simul&#233; par ordinateur &#233;xigera d&#8217;avantages avant d&#8217;accepter un &#233;change.</p>
+      </dd>
+      <dt><b>BENEFICE_SOUHAITE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 2. Cette variable de d&#233;cision indique &#224; votre adversaire simul&#233; par ordinateur quels avantages il devrait &#233;ssayer d&#8217;obtenir lors d&#8217;un &#233;change. La valeur devrait &#234;tre &#233;gale ou sup&#233;rieure &#224; celle du BENEFICE_MINIMUM.</p>
+      </dd>
+      <dt><b>VALEUR_DE_LA_CARTE_VOUS_ETES_LIBERE_DE_PRISON</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 60. Ce param&#232;tre indique &#224; votre adversaire simul&#233; par ordinateur la valeur d&#8217;une carte Vous Etes Lib&#233;r&#233; de prison, lors des &#233;changes. Pour fixer ce param&#232;tre, divisez la somme d&#233;sir&#233;e (en Francs) par 100.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_D&#8217;ARGENT_LIQUIDE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable augmente la valeur de l&#8217;argent liquide lors des &#233;changes dans l&#8217;optique de votre adversaire simul&#233; par ordinateur.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_LA_VALEUR_D&#8217;IMMUNITE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable augmente la valeur de l&#8217;immunit&#233; lors des &#233;changes dans l&#8217;optique de votre adversaire simul&#233; par ordinateur.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_VALEUR_HORS_MONOPOLE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable affecte la valeur des propri&#233;t&#233;s qui ne font pas partie d&#8217;un monopole dans l&#8217;optique de votre adversaire simul&#233; par ordinateur. Plus ce quotient est &#233;lev&#233; plus l&#8217;IA h&#233;sitera &#224; hypoth&#232;quer ou &#224; vendre des propri&#233;t&#233;s pour payer une dette.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_VALEUR_MONOPOLE</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable affecte la valeur des propri&#233;t&#233;s qui font partie d&#8217;un monopole, dans l&#8217;optique de l&#8217;IA. Plus ce quotient est &#233;lev&#233; plus votre adversaire simul&#233; par ordinateur h&#233;sitera &#224; hypoth&#233;quer ou &#224; vendre des propri&#233;t&#233;s qui font partie d&#8217;un monopole pour payer des dettes.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_DE_VALEUR_MAISONS</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 10. Cette variable affecte la valeur des maisons et des hotels dans l&#8217;optique de votre adversaire simul&#233; par ordinateur. Plus le quotient est &#233;lev&#233; plus l&#8217;IA h&#233;sitera &#224; vendre des propri&#233;t&#233;s pour payer une dette.</p>
+      </dd>
+      <dt><b>FREQUENCE_DE_RECHERCHE_D&#8217;ECHANGES</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 100. Cette variable d&#233;termine la fr&#233;quence avec laquelle votre adversaire simul&#233; par ordinateur va chercher &#224; faire un bon &#233;change. Plus le chiffre est &#233;lev&#233; plus l&#8217;IA recherche des &#233;changes souvent.</p>
+      </dd>
+      <dt><b>DELAI_DE_DECISION_MAXIMAL</b></dt>
+      <dd>
+        <p>De 0 &#224; 30 secondes. Il s&#8217;agit du plus long d&#233;lai de r&#233;flexion que votre adversaire simul&#233; par ordinateur n&#233;cessitera pour r&#233;fl&#233;chir &#224; un &#233;change.</p>
+      </dd>
+      <dt><b>DELAI_ DE_DECISION_MINIMAL</b></dt>
+      <dd>
+        <p>De 0 &#224; 30 secondes. Il s&#8217;agit du plus court d&#233;lai de r&#233;flexion que votre adversaire simul&#233; par ordinateur n&#233;cessitera pour r&#233;fl&#233;chir &#224; un &#233;change.</p>
+      </dd>
+      <dt><b>PROBABILITE_D&#8217;ENCHERES_ELEVEES</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 100. Cette variable augmente les probabilit&#233;s que votre adversaire simul&#233; par ordinateur ench&#233;rira des grosses sommes pour une propri&#233;t&#233; lors d&#8217;une vente aux ench&#232;res</p>
+      </dd>
+      <dt><b>PROBABILITE_D&#8217;ENCHERES_BASSES</b></dt>
+      <dd>
+        <p>Valeur de 0 &#224; 100. Cette variable augmente les probabilit&#233;s que votre adversaire simul&#233; par ordinateur ench&#233;rira des sommes de faible importance pour acqu&#233;rir une propri&#233;t&#233; lors d&#8217;une vente aux ench&#232;res.</p>
+      </dd>
+      <dt><b>DELAI_MAXIMUM_DE_JET_DE_DES</b></dt>
+      <dd>
+        <p>De 0 &#224; 20 secondes. C&#8217;est le d&#233;lai maximum de r&#233;flexion avant que votre adversaire simul&#233; par ordinateur ne jette les d&#233;s lorsque vient son tour.</p>
+      </dd>
+      <dt><b>OFFRES_D&#8217;ECHANGES</b></dt>
+      <dd>
+        <p>Valeur de de 0 &#224; 6. Cette variable d&#233;finit pour votre adversaire simul&#233; par ordinateur le nombre maximum de personnes qui seront invit&#233;es &#224; participer &#224; ses &#233;changes. Si vous choisissez 0 ou 1, votre IA n&#8217;offrira jamais d&#8217;&#233;changes.</p>
+      </dd>
+      <dt><b>ACHETE_TOUJOURS_DES_PROPRIETES</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur fait absolument tout ce qu&#8217;il faut pour acheter toute propri&#233;t&#233; &#224; vendre sur laquelle il pourrait s&#8217;arr&#234;ter.</p>
+      </dd>
+      <dt><b>REFUSE_TOUJOURS_LES_ECHANGES</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur n&#8217;accepte jamais un &#233;change.</p>
+      </dd>
+      <dt><b>SORT_TOUJOURS_DE_PRISON</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur essaye toujours de sortir de prison le plus vite possible en payant pour ce faire.</p>
+      </dd>
+      <dt><b>RESTE_TOUJOURS_EN_PRISON</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur essaye de rester en prison le plus lontemps possible.</p>
+      </dd>
+      <dt><b>N&#8217;_ENCHERIT_JAMAIS_PLUS_HAUT_QUE_LA_VALEUR_REELLE</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur n&#8217;ench&#233;rit pas plus que la valeur r&#233;elle pour une propri&#233;t&#233; lors d&#8217;une vente aux ench&#232;res.</p>
+      </dd>
+      <dt><b>CONSTRUIT_SEULEMENT_DES_MAISONS</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur ne construit jamais d&#8217;h&#244;tels, dans le but de cr&#233;er une p&#233;nurie de logements.</p>
+      </dd>
+      <dt><b>N&#8217;_ACCEPTE_JAMAIS_D&#8217;IMMUNITE</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur n&#8217;acceptere jamais l&#8217;immunit&#233; en tant que paiement dans un &#233;change</p>
+      </dd>
+      <dt><b>ACCEPTE_TOUJOURS_UN_MONOPOLE_EN_ECHANGE</b></dt>
+      <dd>
+        <p>Valeur 0 ou 1. Quand le choix est 1, votre adversaire simul&#233; par ordinateur acceptera toujours un &#233;change si, ce faisant, il peut gagner un monopole.</p>
+      </dd>
+      <dt><b>MULTIPLICATEUR_MANQUE_D&#39;ARGENT</b></dt>
+      <dd>
+        <p>La plage des valeurs s&#39;&#233;tend de 0 &#224; 10. Cette variable influence le comportement de votre adversaire simul&#233; par ordinateur lorsque celui-ci se trouve confront&#233; &#224; un manque d&#39;argent. Plus la valeur sera &#233;lev&#233;e, moins l&#8217;lA sera dispos&#233; &#224; consacrer ses r&#233;serves d&#39;argent en diminution au remboursement d&#39;une dette, et plus il aura tendance &#224; utiliser d&#39;autres actifs.</p>
+      </dd>
+    </dl>
+  </body>
+</html>

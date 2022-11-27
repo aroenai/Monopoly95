@@ -1,0 +1,42 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=MONOPOLY.chm
+Contents file=monopoly_french.hhc
+Default Font=Arial,12,0
+Default Window=Main
+Default topic=html\idh_contents.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=MONOPOLY_FRENCH.hhk
+Language=0x40c French (France)
+Title=Monopoly CD-ROM
+
+[WINDOWS]
+Main="Monopoly CD-ROM","monopoly_french.hhc","MONOPOLY_FRENCH.hhk","html\idh_contents.htm",,"html\idh_contents.htm","Sommaire","html\r_gles_du_jeu.htm","Règles du jeu",0x2520,,0xc2006,[0,0,650,986],,,,1,,,0
+
+
+[FILES]
+html\idh_contents.htm
+html\menus_du_jeu_monopoly_cd_rom.htm
+html\comment_jouer_au_monopoly_cd_rom.htm
+html\probl_mes_et_solutions.htm
+html\comment_cr_er_un_adversaire_informatique.htm
+html\tp00co.htm
+html\menu_des_fichiers.htm
+html\menu_des_actions.htm
+html\menu_des_options.htm
+html\menu_aide.htm
+html\interruption_du_jeu.htm
+html\comment_proposer_un_echange.htm
+html\16jzy8.htm
+html\1p_jth7.htm
+html\r_gles_du_jeu.htm
+
+[ALIAS]
+#include NewAliases.h
+
+[MAP]
+#include NewMap.h
+
+[INFOTYPES]
+
