@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <link href="../hh_default.css" rel="stylesheet" type="text/css" />
+    <title>Creating an AI</title>
+  </head>
+  <body>
+    <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+      <param name="Keyword" value="Creating an AI" />
+    </object>
+    <h2><a name="creating_an_ai" id="creating_an_ai"></a>Creating an AI</h2>
+    <p>You can alter the behaviour of the game&#8217;s AI (artificial intelligence) computer-simulated players by tinkering with the settings in MONOPOLY CD-ROM&#8217;s AI Definition files.</p>
+    <p>During the installation of MONOPOLY CD-ROM, an AI directory is created on your hard disk, containing files for all the predefined AI computer-simulated players. One of these files, called <b>standard.ai</b>, contains all of the decision variables that you can change. To create your own, customised computer-simulated opponent, copy <b>standard.ai</b>, giving the new file a name of your choice, such as <b>myai.ai</b>. Call the file up using a text editor, such as DOSEDIT: you can now change any or all of the variables.</p>
+    <p>The first line of the file must always be left as &#8220;[general]&#8221; as shown in standard.ai. Other than that, you may set as many decision variables as you want. Any variables you do not set will automatically revert to the MONOPOLY CD-ROM game&#39;s defaults.</p>
+    <p>The usual syntax for setting a decision variable is: decision_variable = number.</p>
+    <p>A number of key decision variables are described in this section. But to find out about other, hidden decision variables, visit the Westwood Studios web site at <b>http://www.westwood.com</b>. From the Home Page, click on Index and select MONOPOLY CD-ROM game Frequently Asked Questions (FAQ).</p>
+    <p><b><u>Explanation of the Decision Variables</u></b></p>
+    <p>The first twenty-eight decision variables let you set your AI partner&#8217;s affinity for a particular property. The more your AI likes a property, the higher it will value that property when buying or selling. The value must be between 0 and 200. For example: VINE_STREET = 200</p>
+    <p>OLD_KENT_ROAD
+      <br>WHITECHAPEL_ROAD
+      <br>KINGS_CROSS_STATION
+      <br>THE_ANGEL_ISLINGTON
+      <br>EUSTON_ROAD
+      <br>PENTONVILLE_ROAD
+      <br>PALL_MALL
+      <br>ELECTRIC_COMPANY
+      <br>WHITEHALL
+      <br>NORTHUMBERLAND_AVENUE
+      <br>MARYLEBONE_STATION
+      <br>BOW_STREET
+      <br>MARLBOROUGH_STREET
+      <br>VINE_STREET
+      <br>STRAND
+      <br>FLEET_STREET
+      <br>TRAFALGAR_SQUARE
+      <br>FENCHURCH_ST._STATION
+      <br>LEICESTER_SQUARE
+      <br>COVENTRY_STREET
+      <br>WATER_WORKS
+      <br>PICCADILLY
+      <br>REGENT_STREET
+      <br>OXFORD_STREET
+      <br>BOND_STREET
+      <br>LIVERPOOL_ST._STATION
+      <br>PARK_LANE
+      <br>MAYFAIR
+    </p>
+    <p>You can influence other aspects of the game by tweaking the following variables:</p>
+    <dl>
+      <dt><b>OPTIMISM</b></dt>
+      <dd>
+        <p>The range of values is 0 - 5. This decision variable allows the AI to predict how successful it will be in acquiring future properties in a bid to achieve a monopoly.</p>
+      </dd>
+      <dt><b>MONOPOLY_OPTIMISM</b></dt>
+      <dd>
+        <p>The range of values is 0 - 2. This decision variable is similar to OPTIMISM, but it allows the AI to predict its chances of actually achieving a monopoly, not just of acquiring properties in a bid to achieve a monopoly.</p>
+      </dd>
+      <dt><b>MAX_REMAINING_CIRCUITS</b></dt>
+      <dd>
+        <p>The range of values is 40 - 100. This allows the AI to predict how many circuits it thinks the game will last. The greater the value, the higher the AI will value properties when buying or selling.</p>
+      </dd>
+      <dt><b>AVERAGE_POUNDS_PER_CIRCUIT</b></dt>
+      <dd>
+        <p>The range of values is 0 - 1000. This decision variable allows the AI to predict by how much, on average, its wealth will increase each time it completes a single circuit around the board.</p>
+      </dd>
+      <dt><b>PROPERTY_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable raises the AI&#8217;s perceived value of property versus cash. The higher the value, the more the AI will value property over money.</p>
+      </dd>
+      <dt><b>SINGLE_STN_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable increases the AI&#8217;s perceived value of train stations relative to other properties.</p>
+      </dd>
+      <dt><b>MINIMUM_DESIRED_CASH_IN_HAND</b></dt>
+      <dd>
+        <p>The range of values is 0 - 1000. This variable instructs the AI to always try to keep the amount of cash you specify in hand. The higher the figure, the less aggressive the AI will be in purchasing property and buildings.</p>
+      </dd>
+      <dt><b>SEND_PROPERTY_TO_AUCTION_FACTOR</b></dt>
+      <dd>
+        <p>The range of values is 0 - 4. This variable determines how cunning your AI will be. When it lands on a property, it will look at other players&#8217; cash. If other players are short of money, the AI will send the property to auction, and attempt to pay less than its printed price. The lower the setting, the lower the amount of money in other players&#8217; hands that will trigger the AI into trying this crafty move.</p>
+      </dd>
+      <dt><b>SEND_PROPERTY_TO_AUCTION_PERCENTAGE</b></dt>
+      <dd>
+        <p>The range of values is 0 - 100. Based on the SEND_PROPERTY_TO_AUCTION_FACTOR, this decision variable will determine the likelihood of the AI sending the property to auction.</p>
+      </dd>
+      <dt><b>MINIMUM_PROFIT</b></dt>
+      <dd>
+        <p>The range of values is 0 - 2. The higher this variable is above 1.0, the more advantage your AI will require before accepting a deal.</p>
+      </dd>
+      <dt><b>DESIRED_PROFIT</b></dt>
+      <dd>
+        <p>The range of values is 0 - 2. This decision variable tells the AI how much advantage it should seek to gain from any deal. The setting should be equal to or greater than MINIMUM_PROFIT.</p>
+      </dd>
+      <dt><b>VALUE_OF_GET_OUT_OF_JAIL_FREE_CARD</b></dt>
+      <dd>
+        <p>The range of values is 0 - 60. This number tells your AI how much a Get Out of Jail Free card is worth for deal-making purposes.</p>
+      </dd>
+      <dt><b>CASH_VALUE_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable increases the AI&#8217;s perception of the value of money for deal-making purposes.</p>
+      </dd>
+      <dt><b>IMMUNITY_VALUE_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable increases the AI&#8217;s perception of the value of immunity for deal-making purposes.</p>
+      </dd>
+      <dt><b>NON_MONOPOLY_VALUE_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable affects the AI&#8217;s perception of the value of properties that are not part of a monopoly. The higher the value, the more reluctant the AI will be to mortgage or sell properties to pay off a debt.</p>
+      </dd>
+      <dt><b>MONOPOLY_VALUE_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable affects the AI&#8217;s perception of the value of properties that are part of a monopoly. The higher the value, the more reluctant the AI will be to mortgage or sell monopoly properties to pay off a debt.</p>
+      </dd>
+      <dt><b>HOUSES_VALUE_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable affects the AI&#8217;s perception of the value of houses and hotels. The higher the value, the more reluctant the AI will be to sell buildings to pay off a debt.</p>
+      </dd>
+      <dt><b>PERCENTAGE_OF_TIME_LOOKS_FOR_TRADE</b></dt>
+      <dd>
+        <p>The range of values is 0 - 100. This variable determines how often the AI will seek a good bargain opportunity in a given period of time. The higher the setting, the more frequently it seeks.</p>
+      </dd>
+      <dt><b>MAX_AI_DECISION_DELAY</b></dt>
+      <dd>
+        <p>The range of values is 0 - 30 seconds. This is the longest length of time during which your AI will think about a deal.</p>
+      </dd>
+      <dt><b>MIN_AI_DECISION_DELAY</b></dt>
+      <dd>
+        <p>The range of values is 0 - 30 seconds. This is the shortest length of time during which your AI will think about a deal.</p>
+      </dd>
+      <dt><b>PROBABILITY_OF_BIDDING_HIGH</b></dt>
+      <dd>
+        <p>The range of values is 0 - 100. This decision variable increases the chance of your AI bidding in high increments for a property at an auction.</p>
+      </dd>
+      <dt><b>PROBABILITY_OF_BIDDING_LOW</b></dt>
+      <dd>
+        <p>The range of values is 0 - 100. This decision variable increases the chance of your AI bidding in low increments for a property at an auction.</p>
+      </dd>
+      <dt><b>MAX_ROLL_DICE_DELAY</b></dt>
+      <dd>
+        <p>The range of values is 0 - 20 seconds. This is the length of time your AI will wait before throwing the dice to play its turn.</p>
+      </dd>
+      <dt><b>OFFERS_TRADES</b></dt>
+      <dd>
+        <p>The range of values is 0 - 6. This tells your AI the maximum number of people to include in a deal. A value of 0 or 1 is tantamount to instructing the AI never to propose a deal.</p>
+      </dd>
+      <dt><b>ALWAYS_BUYS_PROPERTY</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will do anything it can to buy a vacant property upon which it lands.</p>
+      </dd>
+      <dt><b>ALWAYS_REFUSES_TRADE</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will never accept a deal.</p>
+      </dd>
+      <dt><b>ALWAYS_GETS_OUT_OF_JAIL</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will always try to get out of jail as quickly as possible by paying.</p>
+      </dd>
+      <dt><b>ALWAYS_STAYS_IN_JAIL</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will always try to stay in jail as long as possible.</p>
+      </dd>
+      <dt><b>NEVER_BIDS_OVER_PRINTED_PRICE</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will never bid over the list price for property at an auction.</p>
+      </dd>
+      <dt><b>BUILD_ONLY_HOUSES</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will, in a bid to cause a housing shortage, never build hotels.</p>
+      </dd>
+      <dt><b>NEVER_ACCEPTS_IMMUNITY</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will never accept immunity as part of a deal.</p>
+      </dd>
+      <dt><b>ALWAYS_ACCEPTS_MONOPOLY_IN_TRADE</b></dt>
+      <dd>
+        <p>The range of values is 0 or 1. If set to 1, the AI will always accept a deal if this will lead to it getting a monopoly.</p>
+      </dd>
+      <dt><b>LOW_CASH_MULTIPLIER</b></dt>
+      <dd>
+        <p>The range of values is 0 - 10. This variable affects your computer-simulated opponent (AI)&#39;s behaviour when faced with a shortage of money. The higher the value, the more reluctant the AI will be to spend its dwindling cash reserves to pay off a debt, and the more likely it will be to resort to alternative assets.</p>
+      </dd>
+    </dl>
+  </body>
+</html>

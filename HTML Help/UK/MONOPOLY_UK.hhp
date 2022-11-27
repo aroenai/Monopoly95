@@ -1,0 +1,42 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=MONOPOLY.chm
+Contents file=monopoly_uk.hhc
+Default Font=Arial,12,0
+Default Window=Main
+Default topic=html\idh_contents.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=MONOPOLY_UK.hhk
+Language=0x809 English (United Kingdom)
+Title=Monopoly CD-ROM
+
+[WINDOWS]
+Main="Monopoly CD-ROM","monopoly_uk.hhc","MONOPOLY_UK.hhk","html\idh_contents.htm",,"html\idh_contents.htm","Contents","html\rules.htm","Official Rules",0x2520,,0xc2006,[0,0,599,929],,,,1,,,0
+
+
+[FILES]
+html\idh_contents.htm
+html\using_monopoly_cd_rom_menus.htm
+html\how_to_play_the_game.htm
+html\troubleshooting.htm
+html\creating_an_ai.htm
+html\waiting_room.htm
+html\file_menu.htm
+html\action_menu.htm
+html\options_menu.htm
+html\help_menu.htm
+html\interrupting_play.htm
+html\proposing_a_deal.htm
+html\starting_a_game.htm
+html\chat_messages.htm
+html\rules.htm
+
+[ALIAS]
+#include NewAliases.h
+
+[MAP]
+#include NewMap.h
+
+[INFOTYPES]
+

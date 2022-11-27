@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Contents">
+		<param name="Name" value="Contents">
+		<param name="Local" value="html/idh_contents.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Using Monopoly CD-ROM Menus">
+		<param name="Name" value="Using Monopoly CD-ROM Menus">
+		<param name="Local" value="html/using_monopoly_cd_rom_menus.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="File Menu">
+			<param name="Name" value="File Menu">
+			<param name="Local" value="html/file_menu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Action Menu">
+			<param name="Name" value="Action Menu">
+			<param name="Local" value="html/action_menu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Options Menu">
+			<param name="Name" value="Options Menu">
+			<param name="Local" value="html/options_menu.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Help Menu">
+			<param name="Name" value="Help Menu">
+			<param name="Local" value="html/help_menu.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="How to Play the Game">
+		<param name="Name" value="How to Play the Game">
+		<param name="Local" value="html/how_to_play_the_game.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Starting a Game">
+			<param name="Name" value="Starting a Game">
+			<param name="Local" value="html/starting_a_game.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Interrupting Play">
+			<param name="Name" value="Interrupting Play">
+			<param name="Local" value="html/interrupting_play.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Proposing a Deal">
+			<param name="Name" value="Proposing a Deal">
+			<param name="Local" value="html/proposing_a_deal.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Keyword" value="Chat Messages">
+			<param name="Name" value="Chat Messages">
+			<param name="Local" value="html/chat_messages.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Rules">
+		<param name="Name" value="Rules">
+		<param name="Local" value="html/rules.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Troubleshooting">
+		<param name="Name" value="Troubleshooting">
+		<param name="Local" value="html/troubleshooting.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Creating an AI">
+		<param name="Name" value="Creating an AI">
+		<param name="Local" value="html/creating_an_ai.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Keyword" value="Waiting Room">
+		<param name="Name" value="Waiting Room">
+		<param name="Local" value="html/waiting_room.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>
