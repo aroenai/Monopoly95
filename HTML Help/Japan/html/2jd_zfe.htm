@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=shift_jis">
+<link href="../hh_default.css" rel="stylesheet" type="text/css" />
+<TITLE>AI プレイヤーの作成</TITLE>
+</HEAD>
+
+<BODY>
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="AI プレイヤーの作成">
+</OBJECT>
+
+<H2><A NAME="2jd_zfe"></A>AI プレイヤーの作成</H2>
+
+<P>MONOPOLY CD-ROM ゲーム AI 定義ファイルを作成して、独自の人工知能 (AI) プレイヤーを追加できます。AI プレイヤー用の各種の変数により、コンピュータが行なうプレイを調整します。</P>
+
+<P>MONOPOLY CD-ROM ゲームをインストールすると、あらかじめ作成されている AI プレイヤーのデータが含まれる AI という名前のディレクトリが作成されます。これらのファイルには、変更できるすべての変数が含まれています。独自の AI プレイヤーを作成するには、<B>standard.ai</B> ファイルを別の名前 (たとえば <B>myai.ai</B>) で保存します。ファイルを保存したら、メモ帳などのエディタを使って変数を変更します。</P>
+
+<P>最初の行は変更しないでください ([general] のまま残してください)。2 行目以降に、必要に応じて各種の変数を設定します。ファイルで設定されなかった変数は、MONOPOLY CD-ROM ゲームのデフォルトの値に設定されます。</P>
+
+<P>変数の一般的な書式は次のようになります:  変数 = 数字</P>
+
+<P>多くの変数については、このセクションで説明してあります。説明されていない一部の変数については、Westwood Studios のウェブサイト <B>http://www.westwood.com</B> で説明してあります。ホームページからインデックスをクリックして、MONOPOLY CD-ROM ゲーム FAQ をご覧ください。</P>
+
+<P><B><U>AI プレイヤー用の変数</U></B></P>
+
+<P>はじめの 28 の変数は、その物件をどの程度気に入っているかを決定します。値が大きいほど、その物件の価値を高く評価して、交渉、取得を行ないます。値の範囲は 0 - 200 です。例:  NEW_YORK_AVENUE = 150</P>
+
+<P>MEDITERANNEAN_AVENUE
+
+<BR>BALTIC_AVENUE
+
+<BR>READING_RAILROAD
+
+<BR>ORIENTAL_AVENUE
+
+<BR>VERMONT_AVENUE
+
+<BR>CONNECTICUT_AVENUE
+
+<BR>ST_CHARLES_PLACE
+
+<BR>ELECTRIC_COMPANY
+
+<BR>STATES_AVENUE
+
+<BR>VIRGINIA_AVENUE
+
+<BR>PENNSYLVANIA_RAILROAD
+
+<BR>ST_JAMES_PLACE
+
+<BR>TENNESSEE_AVENUE
+
+<BR>NEW_YORK_AVENUE
+
+<BR>KENTUCKY_AVENUE
+
+<BR>INDIANA_AVENUE
+
+<BR>ILLINOIS_AVENUE
+
+<BR>B_AND_O_RAILROAD
+
+<BR>ATLANTIC_AVENUE
+
+<BR>VENTNOR_AVENUE
+
+<BR>WATER_WORKS
+
+<BR>MARVIN_GARDENS
+
+<BR>PACIFIC_AVENUE
+
+<BR>NORTH_CAROLINA_AVENUE
+
+<BR>PENNSYLVANIA_AVENUE
+
+<BR>SHORT_LINE_RAILROAD
+
+<BR>PARK_PLACE
+
+<BR>BOARDWALK</P>
+
+<P>その他の変数は、ゲームの特定の局面に影響があるものです:</P>
+
+<P><B>OPTIMISM</B>.  値の範囲は 0 - 5 です。この変数は、AI にカラーグループを独占できそうかどうかを予測させます。</P>
+
+<P><B>MONOPOLY_OPTIMISM</B>.  値の範囲は 0 - 2 です。この変数は OPTIMISM に似ていますが、カラーグループの独占だけではなく、勝利できそうかどうかを予測させます。.</P>
+
+<P><B>MAX_REMAINING_REVOLUTIONS</B>.  値の範囲は 40 - 100 です。この変数は、AI にゲームの局面がどの程度変化するかを予測させます。値が高くなるほど、AI は交渉に使用する物件の価値を高くみます。</P>
+
+<P><B>AVERAGE_DOLLARS_PER_REVOLUTION</B>.  値の範囲は 0 - 1000 で、単位はドルです。この変数は、AI に局面が変化するごとに、価値が平均でどの程度上昇するかを予測させます。</P>
+
+<P><B>PROPERTY_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、物件の価値と物件を現金にしたときの金額を比較します。値が高くなるほど、AI は物件の価値を高くみます。</P>
+
+<P><B>SINGLE_RR_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、鉄道一つの価値と他の物件の価値を比較します。値が高くなるほど、AI は鉄道の価値を高くみます。</P>
+
+<P><B>MINIMUM_DESIRED_CASH_ON_HAND</B>.  値の範囲は 0 - 1000 で、単位はドルです。この変数は、手元に常に残す現金を指示します。値が高くなるほど、AI は物件や建物の購入に消極的になります。</P>
+
+<P><B>SEND_PROPERTY_TO_AUCTION_FACTOR</B>.  値の範囲は 0 - 4 です。この変数は、AI を巧妙にします。未所有の物件に止まった場合、他のプレイヤーの現金を確認します。他のプレイヤーの現金が少ない場合、物件を競売にかけて、本来の価格よりも低い金額で入手しようとします。値が低くなるほど、他のプレイヤーの現金が低い場合にこの種のプレイを行ないます。</P>
+
+<P><B>SEND_PROPERTY_TO_AUCTION_PERCENTAGE</B>.  値の範囲は 0 - 100 で、単位はパーセントです。SEND_PROPERTY_TO_AUCTION_FACTOR 変数が参照されたとき、AI が物件を競売にかける確率を指示します。</P>
+
+<P><B>MINIMUM_PROFIT</B>.  値の範囲は 0 - 2 です。値が 1.0 よりも高い場合、有利でないと交渉に応じません。</P>
+
+<P><B>DESIRED_PROFIT</B>.  値の範囲は 0 - 2 です。この変数は、AI が交渉のときにどの程度有利な交渉を行なうかを決めます。値は MINIMUM_PROFIT 以上でなければなりません。</P>
+
+<P><B>VALUE_OF_GET_OUT_OF_JAIL_FREE_CARD</B>.  値の範囲は 0 - 60 で、単位はドルです。この変数は、交渉における「刑務所より釈放」カードの価値を決めます。</P>
+
+<P><B>CASH_VALUE_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、交渉における現金の価値を決めます。</P>
+
+<P><B>IMMUNITY_VALUE_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、交渉における免除の価値を決めます。</P>
+
+<P><B>NON_MONOPOLY_VALUE_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、独占していないカラーグループの評価に影響します。値が高くなるほど、現金が不足した場合に物件を抵当にいれるか売却するようになります。</P>
+
+<P><B>MONOPOLY_VALUE_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、独占しているカラーグループの評価に影響します。値が高くなるほど、現金が不足した場合に物件を抵当にいれるか売却するようになります。</P>
+
+<P><B>HOUSES_VALUE_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、家とホテルの評価に影響します。値が高くなるほど、現金が不足した場合に建物を売却するようになります。</P>
+
+<P><B>PERCENTAGE_OF_TIME_LOOKS_FOR_TRADE</B>.  値の範囲は 0 - 100 です。この変数は、どの程度の確率で良い交渉をさがすかを決めます。値が高いほど、さがす確率が高くなります。</P>
+
+<P><B>MAX_AI_DECISION_DELAY</B>.  値の範囲は 0 - 30 秒 です。交渉を考える時間の最大値です。</P>
+
+<P><B>MIN_AI_DECISION_DELAY</B>.  値の範囲は 0 - 30 秒 です。交渉を考える時間の最小値です。</P>
+
+<P><B>PROBABILITY_OF_BIDDING_HIGH</B>.  値の範囲は 0 - 100 です。この変数は、AI が競売のときに一度に増やす最高額を決めます。</P>
+
+<P><B>PROBABILITY_OF_BIDDING_MIDDLE</B>.  値の範囲は 0 - 100 です。この変数は、AI が競売のときに一度に増やす最低額を決めます。</P>
+
+<P><B>MAX_ROLL_DICE_DELAY</B>.  値の範囲は 0 - 20 秒 です。AI がサイコロを振る前に待つ時間です。</P>
+
+<P><B>OFFERS_TRADES</B>.  値の範囲は 0 - 6 です。AI が (自分も含めて) 交渉の対象にする人数を決めます。値が 0 または 1 の場合、AI は自分から交渉を行ないません。</P>
+
+<P><B>ALWAYS_BUYS_PROPERTY</B>.  値の範囲は 0 または 1 です。1 の場合、未所有の物件に止まったときに、必ずその物件を購入します。</P>
+
+<P><B>ALWAYS_REFUSES_TRADE</B>.  値の範囲は 0 または 1 です。1 の場合、決して交渉に応じません。</P>
+
+<P><B>ALWAYS_GETS_OUT_OF_JAIL</B>.  値の範囲は 0 または 1 です。1 の場合、常にお金を払って刑務所を出ます。</P>
+
+<P><B>ALWAYS_STAYS_IN_JAIL</B>.  値の範囲は 0 または 1 です。1 の場合、可能な限り刑務所に留まるようにします。</P>
+
+<P><B>NEVER_BIDS_OVER_PRINTED_PRICE</B>.  値の範囲は 0 または 1 です。1 の場合、競売のときに印刷されている価格よりも高い金額を提示します。</P>
+
+<P><B>BUILD_ONLY_HOUSES</B>.  値の範囲は 0 または 1 です。1 の場合、銀行の家の数が少なくなるように、ホテルを建てません。</P>
+
+<P><B>NEVER_ACCEPTS_IMMUNITY</B>.  値の範囲は 0 または 1 です。1 の場合、交渉で免除を受け付けません。</P>
+
+<P><B>ALWAYS_ACCEPTS_MONOPOLY_IN_TRADE</B>.  値の範囲は 0 または 1 です。1 の場合、カラーグループを独占できる交渉を必ず受け入れます。</P>
+
+<P><B>LOW_CASH_MULTIPLIER</B>.  値の範囲は 0 - 10 です。この変数は、現金が少ないときの行動に影響します。値が高くなるほど、支払いに現金を多用します。</P>
+
+</BODY>
+</HTML>

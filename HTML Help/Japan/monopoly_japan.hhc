@@ -1,0 +1,86 @@
+<HTML>
+<!--Sitemap 1.0-->
+<OBJECT type="text/site properties">
+</OBJECT>
+<UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="目次">
+		<param name="Local" value="html/y4i1kj.htm">
+		</OBJECT>
+		<A HREF="html/y4i1kj.htm">目次</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="MONOPOLY CD-ROM ゲームのメニュー">
+		<param name="Local" value="html/25rys5.htm">
+		</OBJECT>
+		<A HREF="html/25rys5.htm">MONOPOLY CD-ROM ゲームのメニュー</A><BR>
+	<UL>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="ファイル メニュー">
+			<param name="Local" value="html/2wiu0ju.htm">
+			</OBJECT>
+			<A HREF="html/2wiu0ju.htm">ファイル メニュー</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="アクション メニュー">
+			<param name="Local" value="html/6a4jzs.htm">
+			</OBJECT>
+			<A HREF="html/6a4jzs.htm">アクション メニュー</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="オプション メニュー">
+			<param name="Local" value="html/anlhur.htm">
+			</OBJECT>
+			<A HREF="html/anlhur.htm">オプション メニュー</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="ヘルプ メニュー">
+			<param name="Local" value="html/4x_j_.s.htm">
+			</OBJECT>
+			<A HREF="html/4x_j_.s.htm">ヘルプ メニュー</A><BR>
+	</UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ゲームのプレイ方法">
+		<param name="Local" value="html/23uq0yj.htm">
+		</OBJECT>
+		<A HREF="html/23uq0yj.htm">ゲームのプレイ方法</A><BR>
+	<UL>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="ゲームの開始">
+			<param name="Local" value="html/65p75j.htm">
+			</OBJECT>
+			<A HREF="html/65p75j.htm">ゲームの開始</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="プレイの中断">
+			<param name="Local" value="html/iw3og3.htm">
+			</OBJECT>
+			<A HREF="html/iw3og3.htm">プレイの中断</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="交渉の提示">
+			<param name="Local" value="html/k8ijww.htm">
+			</OBJECT>
+			<A HREF="html/k8ijww.htm">交渉の提示</A><BR>
+		<LI><OBJECT type="text/sitemap">
+			<param name="Name" value="チャット メッセージ">
+			<param name="Local" value="html/_g3zv.htm">
+			</OBJECT>
+			<A HREF="html/_g3zv.htm">チャット メッセージ</A><BR>
+	</UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ルール">
+		<param name="Local" value="html/rules.htm">
+		</OBJECT>
+		<A HREF="html/rules.htm">ルール</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="トラブルシューティング">
+		<param name="Local" value="html/y7vsa.htm">
+		</OBJECT>
+		<A HREF="html/y7vsa.htm">トラブルシューティング</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="AI プレイヤーの作成">
+		<param name="Local" value="html/2jd_zfe.htm">
+		</OBJECT>
+		<A HREF="html/2jd_zfe.htm">AI プレイヤーの作成</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="待合室">
+		<param name="Local" value="html/kvl.2b.htm">
+		</OBJECT>
+		<A HREF="html/kvl.2b.htm">待合室</A><BR>
+</UL>
+</HTML>

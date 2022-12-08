@@ -1,0 +1,41 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=MONOPOLY.chm
+Contents file=monopoly_japan.hhc
+Default Font=Arial,12,0
+Default Window=Main
+Default topic=html\y4i1kj.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=MONOPOLY_JAPAN.hhk
+Language=0x411 Japanese (Japan)
+Title=Monopoly CD-ROM
+
+[WINDOWS]
+Main="Monopoly CD-ROM","monopoly_japan.hhc","MONOPOLY_JAPAN.hhk","html\y4i1kj.htm",,"html\y4i1kj.htm","目次","html\rules.htm","ルール",0x2520,,0xc2006,[0,0,602,933],,,,1,,,0
+
+
+[FILES]
+html\y4i1kj.htm
+html\25rys5.htm
+html\23uq0yj.htm
+html\y7vsa.htm
+html\2jd_zfe.htm
+html\kvl.2b.htm
+html\2wiu0ju.htm
+html\6a4jzs.htm
+html\anlhur.htm
+html\4x_j_.s.htm
+html\iw3og3.htm
+html\k8ijww.htm
+html\65p75j.htm
+html\_g3zv.htm
+html\rules.htm
+
+[INFOTYPES]
+
+[MAP]
+#include NewMap.h
+
+[ALIAS]
+#include NewAliases.h
